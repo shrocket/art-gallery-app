@@ -5,12 +5,10 @@ import ArtPieces from "../components/ArtPieces";
 import Link from "next/link";
 import Spotlight from "@/components/Spotlight";
 
-export default function Homepage({ pieces }) {
+export default function SpotlightPage({ pieces }) {
   return (
     <>
-      <h1>Welcome!</h1>
-      <Link href="/art-pieces">Art Pieces</Link>
-      <br />
+      <h1>Art Gallery</h1>
       <Spotlight pieces={pieces} />
     </>
   );
