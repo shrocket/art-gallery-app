@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import ArtPieces from "../components/ArtPieces";
 import Link from "next/link";
+import Layout from "@/components/Layout";
 
 const fetcher = (URL) => fetch(URL).then((res) => res.json());
 
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <Component {...pageProps} pieces={pieces} />
+      <Layout />
     </>
   );
 }
