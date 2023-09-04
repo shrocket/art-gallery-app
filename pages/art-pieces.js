@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import ArtPieces from "../components/ArtPieces";
 
-export default function artPieces({ pieces }) {
+export default function ArtPiecesOverview({ pieces }) {
   return (
     <>
       <h1>Art Gallery</h1>
